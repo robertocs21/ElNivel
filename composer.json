@@ -1,0 +1,22 @@
+{
+    "name": "robertocastro/elnivel",
+    "description": "app el nivel",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models"
+
+        }
+    },
+    "authors": [
+        {
+            "name": "robertocs21",
+            "email": "robertocastro1997@hotmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

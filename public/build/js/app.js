@@ -1,0 +1,1 @@
+function cursocliente(){alert("Cliente Registrado")}
