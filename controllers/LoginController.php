@@ -1,7 +1,12 @@
 <?php
 
 namespace Controllers;
-
+include '../models/cliente.php';
+include '../models/clienteya.php';
+include '../models/cursos_inscritos.php';
+include '../models/cursos.php';
+include '../models/cursosya.php';
+include '../models/usuarios.php';
 use Model\Usuarios;
 use Model\Cursos;
 use Model\Cliente;
