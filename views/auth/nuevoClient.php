@@ -1,7 +1,7 @@
 <body class="body-cliente">
 <div class="cont-header-cliente">
     <div class="cont-header-cursos">
-        <img src="build/imgs/logo1.png" class="float-left">
+    <img src="build/imgs/logo1.png" class="float-left" onclick="location.href='/'">
         <h2 class="directorio-title"> Nuevo Cliente </h2>
     </div>
 </div>

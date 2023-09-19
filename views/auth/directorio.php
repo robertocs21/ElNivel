@@ -3,7 +3,7 @@
    
 </div>
 <div class="cont-header-direc">
-    <img src="build/imgs/logo1.png" class="float-left">
+<img src="build/imgs/logo1.png" class="float-left" onclick="location.href='/'">
     <h1 class="directorio-title"> ¿Qué desea hacer? </h1>
 </div>
 <div class="cont-main-direc">

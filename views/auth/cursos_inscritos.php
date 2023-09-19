@@ -1,7 +1,7 @@
 
 <body class="body-cursos">
 <div class="cont-header-cursos">
-  <img src="build/imgs/logo1.png" class="float-left">
+<img src="build/imgs/logo1.png" class="float-left" onclick="location.href='/'">
   <h2 class="directorio-title"> Cursos Inscritos </h2>
 </div>
 <div class="cont-main-cursos">
