@@ -4,7 +4,7 @@ namespace Model;
 
 class Cursos extends ActiveRecord{
     //Base de datos
-    protected static $tabla = 'cursos';
+    protected static $tabla = 'Cursos';
     protected static $columnasDB = ['id','fecha','cupo','nombre','precio','marca','maestro','hora','eliminado'];
     public $id;
     public $fecha;
