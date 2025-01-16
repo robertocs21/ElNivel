@@ -148,7 +148,7 @@ class ActiveRecord {
         return  $resultado  ; 
     }
     public static function buscarfolio($folio) {
-        $query = " SELECT * FROM cliente WHERE folio LIKE '%".$folio."%' LIMIT 1 ";
+        $query = " SELECT * FROM cliente WHERE id LIKE '%".$folio."%' LIMIT 1 ";
         $resultado = self::consultarSQL($query);
         return  $resultado  ; 
     }
@@ -168,7 +168,7 @@ class ActiveRecord {
         return  $resultado  ; 
     }
     public static function buscarid($id) {
-        $query = " SELECT * FROM pacientes WHERE nombre LIKE '%".$id."%' ";
+        $query = " SELECT * FROM cliente WHERE folio LIKE '%".$id."%' LIMIT 1 ";
         $resultado = self::consultarSQL($query);
         return  $resultado  ; 
     }

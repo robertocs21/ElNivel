@@ -32,9 +32,7 @@
                 </div>
             </li>
         </ul>
-        <?php foreach($ultimo as $ult):?>
-        <input type="hidden" name = "folio" value="<?php echo s($cliente->folio = $ult->folio+1)?>">
-        <?php endforeach;  ?>
+       
     </form>
 
     <div style="width: 40%; text-align: right; background-image: url('build/imgs/curso1.jpg')">
@@ -46,8 +44,3 @@
 <footer class="cont-footer-direc">
     <p>El Nivel - Materias Primas</p>
 </footer>
-<?php 
-    $script = "
-        <script src='build/js/app.js'></script>
-    ";
-?>

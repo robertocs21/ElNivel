@@ -141,7 +141,7 @@ class LoginController{
             $cliente->sincronizar($_POST);
             //debuguear($cliente);
             $cliente->guardar();
-            header("Location: seleccionar_cursos?folio=$cliente->folio");
+            header("/");
         }
         $router->render('auth/nuevoClient',[
             'cliente'=>$cliente,
@@ -298,13 +298,13 @@ class LoginController{
 
 
     public static function seleccionar_cursos(Router $router){
-        $folio = $_GET['folio'];
+        $id=$_GET['id'];
         $cliente = new Cliente;
-        $id = $cliente -> buscarfolio($folio);
+        $id = $cliente -> buscarfolio($id);
         $inscrito = new cursos_inscritos;
         $curso = new Cursos;
         $res = $curso -> all();
-       //debuguear($res);
+       //debuguear($id);
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
             //debuguear($_POST);
             $inscrito -> sincronizar($_POST);

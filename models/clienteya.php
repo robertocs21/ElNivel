@@ -5,8 +5,7 @@ namespace Model;
 class Clienteya extends ActiveRecord{
     //Base de datos
     protected static $tabla = 'cursos_inscritos';
-    protected static $columnasDB = ['ci_id','id','nombre','apellido','sapellido','edad','telefono','email','fecha','folio'];
-    public $ci_id;
+    protected static $columnasDB = ['id','nombre','apellido','sapellido','edad','telefono','email','fecha','folio'];
     public $id;
     public $nombre;
     public $apellido;
@@ -17,7 +16,6 @@ class Clienteya extends ActiveRecord{
     public $fecha;
     public $folio;
     public function __construct($args = []){
-        $this->ci_id = $args['ci_id'] ?? null;
         $this->id = $args['id'] ?? null;
         $this->nombre = $args['nombre'] ?? '';
         $this->apellido = $args['apellido'] ?? '';

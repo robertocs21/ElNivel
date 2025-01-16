@@ -10,7 +10,7 @@
             <ul class="ul-cursos">
                 <li style="display: flex">
                     <button type="button" class="btn-regresar-cursos" onclick="location.href='/perfil_cliente?id=<?php echo $id ?>'">Regresar</button>
-                    <button type="button" class="btn-regresar-cursos" onclick="location.href='/seleccionar_cursos?folio=<?php echo $folio?>'">Registrar en curso</button>
+                    <button type="button" class="btn-regresar-cursos" onclick="location.href='/seleccionar_cursos?id=<?php echo $id?>'">Registrar en curso</button>
                 </li>
                 <hr>
                 <li>
