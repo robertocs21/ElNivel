@@ -17,6 +17,8 @@
         <li>
             <div class="cont-curso-existente">
             <?php foreach ($mostrar as $m): ?>
+               
+
                 <form method="POST">
                     <table>
                         <th></th>
@@ -34,16 +36,15 @@
                                     <p> <?php echo $m->telefono; ?></p>
                                     <hr>
                                     <p> <?php echo $m->email; ?></p>
-                                    <hr>
-                                    <p> <?php echo $m->edad; ?> años</p>
-                                    <hr>
-                                   <input type="hidden" name="id"  value="<?php echo $m->ci_id ?>">
-                                  
+                                   
+                                   <input type="hidden" name="cliente_id"  value="<?php echo $m->id ?>">
+                                   <input type="hidden" name="curso_id"  value="<?php echo $id ?>">
                                 </li>
                             </ul>
                         </td>
                         <td class="cont-btn-modificar-curso">
-                            <button type="submit" name="modificar-curso" class="btn-modificar-curso">Eliminar de Curso</button>
+                        <button type="submit" name="modificar-curso" class="btn-modificar-curso">Eliminar de Curso</button>
+
                             <button type="button" name="modificar-curso" class="btn-modificar-curso" onclick="location.href='/estado_cuenta?id=<?php echo $m->id?>&nombre=<?php echo $m->nombre?>&apellido=<?php echo $m->apellido?>'">Estado de cuenta</button>
                         </td>
                     </table>

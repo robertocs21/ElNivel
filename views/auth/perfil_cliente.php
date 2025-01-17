@@ -27,7 +27,6 @@
                     <input type="text" class="input-text" placeholder="Nombre" name="nombre" value="<?php echo $resultado->nombre?>">
                     <input type="text" class="input-text" placeholder="1er Apellido" name="apellido" value="<?php echo $resultado->apellido?>">
                     <input type="text" class="input-text" placeholder="2do Apellido" name="sapellido" value="<?php echo $resultado->sapellido?>">
-                    <input type="number" class="input-text" placeholder="Edad" name="edad" min="0" value="<?php echo $resultado->edad?>">
                     <input type="tel" class="input-text" placeholder="Teléfono" name="telefono" value="<?php echo $resultado->telefono?>">
                     <input type="email" class="input-text" placeholder="e-mail" name="email" value="<?php echo $resultado->email?>">
                 </div>

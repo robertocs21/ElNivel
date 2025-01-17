@@ -226,13 +226,16 @@ class LoginController{
         $mostrar = clienteya::SQL($consulta);
         $inscrito = new cursos_inscritos;
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
+          
             $inscrito -> sincronizar($_POST);
-            $inscrito-> eliminar();
+            //debuguear($inscrito);
+            $inscrito-> eliminarDelCurso();
             header("Location: modificar_alumnos_inscritos?id=$id&nombre=$nombre");
         }
         $router->render('auth/modificar_alumnos_inscritos',[
             'mostrar'=>$mostrar,
-            'nombre'=>$nombre
+            'nombre'=>$nombre,
+            'id'=>$id
         ]);
     }
 

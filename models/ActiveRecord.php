@@ -231,6 +231,23 @@ class ActiveRecord {
         $resultado = self::$db->query($query);
         return $resultado;
     }
+    public function eliminarDelCurso() {
+        // Escapar los valores de cliente_id y curso_id para prevenir inyecciones SQL
+        $cliente_id = self::$db->escape_string($this->cliente_id);
+        $curso_id = self::$db->escape_string($this->curso_id);
+        
+        // Construir la consulta SQL para eliminar el registro basado en cliente_id y curso_id
+        $query = "DELETE FROM cursos_inscritos 
+                  WHERE cliente_id = $cliente_id 
+                  AND curso_id = $curso_id 
+                  LIMIT 1";
+        
+        // Ejecutar la consulta
+        $resultado = self::$db->query($query);
+        return $resultado;
+    }
+    
+    
      // Subida de archivos
      public function setImagen($imagen) {
         // Elimina la imagen previa

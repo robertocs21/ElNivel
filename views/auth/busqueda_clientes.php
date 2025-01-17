@@ -37,9 +37,7 @@
                                             <p><?php echo $r->telefono?></p>
                                             <hr>
                                             <p><?php echo $r->email?></p>
-                                            <hr>
-                                            <p><?php echo $r->edad?> años</p>
-                                            <hr>
+                                         
                                             <hr style="border: none; border-top: 1px solid transparent;">
                                         </li>
                                     </ul>
