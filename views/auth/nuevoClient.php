@@ -24,7 +24,7 @@
                     <input type="text" class="input-text" placeholder="1er Apellido" name="apellido"required>
                     <input type="text" class="input-text" placeholder="2do Apellido" name="sapellido"required>
                     <input type="num" class="input-text" placeholder="Teléfono" name="telefono"required>
-                    <input type="email" class="input-text" placeholder="e-mail" name="email" required>
+                    <input type="email" class="input-text" placeholder="e-mail" name="email" >
                     <button type="submit" class="btn-seleccionar-curso" id="seleccionar" style="display: none"> Seleccionar Curso </button>
                     <button type="submit" class="btn-seleccionar-curso" id="guardar" > Guardar </button>
                     
