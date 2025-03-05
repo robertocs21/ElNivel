@@ -141,7 +141,8 @@ class LoginController{
             $cliente->sincronizar($_POST);
             //debuguear($cliente);
             $cliente->guardar();
-            header("/");
+            header("Location: /");
+            exit;
         }
         $router->render('auth/nuevoClient',[
             'cliente'=>$cliente,

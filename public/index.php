@@ -15,14 +15,8 @@ $router->get('/',[LoginController::class, 'directorio']);
 $router->get('/buscar',[LoginController::class, 'buscar']);
 $router->post('/buscar',[LoginController::class, 'buscar']);
 
-$router->get('/cursos',[LoginController::class, 'cursos']);
-$router->post('/cursos',[LoginController::class, 'cursos']);
-
 $router->get('/adeudos',[LoginController::class, 'adeudos']);
 $router->post('/adeudos',[LoginController::class, 'adeudos']);
-
-$router->get('/cursos',[LoginController::class, 'cursos']);
-$router->post('/cursos',[LoginController::class, 'cursos']);
 
 $router->get('/cursos',[LoginController::class, 'cursos']);
 $router->post('/cursos',[LoginController::class, 'cursos']);
